@@ -13,4 +13,9 @@ public class Rectangle implements Shape {
 	{
 		return (length*2 + width*2);
 	}
+	
+	public double area()
+	{
+		return length*width;
+	}
 }
