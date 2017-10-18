@@ -20,7 +20,7 @@ public class Square extends Rectangle {
 	}
 }
 
-/*	private double side;
+/*	private double side; 
 
 public Square(double side)
 {
