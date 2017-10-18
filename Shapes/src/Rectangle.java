@@ -1,4 +1,9 @@
-
+/**
+ * @author Kaitlyn Cao 
+ * Created 10/16/2017 
+ * Lab 2.1 shapes
+ *
+ */
 public class Rectangle implements Shape {
 	private double length;
 	private double width;
@@ -17,5 +22,10 @@ public class Rectangle implements Shape {
 	public double area()
 	{
 		return length*width;
+	}
+	
+	public String toString()
+	{
+		return "Rectangle Width: " + width + "Length: " + length + "Area: " = this.area() + "Perimeter: " + this.calculatePerimeter();
 	}
 }

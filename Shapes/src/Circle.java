@@ -1,8 +1,13 @@
-
+/**
+ * @author Kaitlyn Cao 
+ * Created 10/16/2017 
+ * Lab 2.1 shapes
+ *
+ */
 public class Circle implements Shape {
 	
 	private double radius;
-	private double pi = 3.14;
+	private static double pi = 3.14;
 	
 	public Circle(double rad)
 	{
@@ -17,5 +22,10 @@ public class Circle implements Shape {
 	public double area()
 	{
 		return pi*(radius*2);
+	}
+	
+	public String toString()
+	{
+		return "";
 	}
 }

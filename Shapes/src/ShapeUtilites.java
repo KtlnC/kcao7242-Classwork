@@ -1,5 +1,12 @@
 import java.util.Random;
 
+/**
+ * @author Kaitlyn Cao
+ * Created 10/16/2017 
+ * Lab 2.1 shapes
+ *
+ */
+
 public class ShapeUtilites {
 	
 	public static double sumPerimeter(Shape[] shapeArr)
@@ -25,7 +32,7 @@ public class ShapeUtilites {
 	public static Shape getRandomShape()
 	{
 		Random r = new Random();
-		int x = r.nextInt(4);
+		int x = r.nextInt(3);
 		switch(x)
 		{
 		case(0):
@@ -34,8 +41,7 @@ public class ShapeUtilites {
 			return new Rectangle(r.nextInt(27), r.nextInt(27));
 		case(2):
 			return new Square(r.nextInt(9));
-		case(3):
-			return new Triangle(r.nextInt(12), r.nextInt(13));
+
 		default:
 			return null;
 		
