@@ -1,11 +1,3 @@
-package shapes;
-
-import shapes.Circle;
-import shapes.Rectangle;
-import shapes.Shape;
-import shapes.ShapeUtilities;
-import shapes.Square;
-
 /**
  * @author Mr Levin Created 10/16/2017
  * 
@@ -27,16 +19,15 @@ public class Runner {
 		Shape rectangle1 = new Rectangle(10, 4);
 		Shape square1 = new Square(10);
 
-		System.out.println("First test out the hard coded shape arraay.\n\n");
+		System.out.println("First test out the hard coded shape array.\n\n");
 		Shape[] shapeArr = { circle1, rectangle1, square1 };
 
 		for (Shape shape : shapeArr) {
 			System.out.println(shape);
 		}
 		System.out.println("\nDid the three shapes above add up to the total printed here?\n");
-		System.out.println("Total Area: " + ShapeUtilities.sumArea(shapeArr)); // 168.26
-		System.out.println("Total Perimeter: " + ShapeUtilities.sumPerimeter(shapeArr)); // 86.84
-		System.out.println("\nDid the three shapes above add up to the total printed here?\n");
+		System.out.println("Total Area: " + ShapeUtilites.sumArea(shapeArr)); // 168.26
+		System.out.println("Total Perimeter: " + ShapeUtilites.sumPerimeter(shapeArr)); // 86.84
 
 		System.out.println("\n\n Now testing the random array.\n");
 
@@ -44,15 +35,15 @@ public class Runner {
 
 		// Why are we using a for loop instead of a for-each loop here?
 		for (int i = 0; i < shapeArr.length; i++) {
-			shapeArr[i] = ShapeUtilities.randomShape();
+			shapeArr[i] = ShapeUtilites.randomShape();
 		}
 
 		for (Shape shape : shapeArr) {
 			System.out.println(shape);
 		}
 
-		System.out.println("\nTotal Area: " + ShapeUtilities.sumArea(shapeArr));
-		System.out.println("Total Perimeter: " + ShapeUtilities.sumPerimeter(shapeArr));
+		System.out.println("\nTotal Area: " + ShapeUtilites.sumArea(shapeArr));
+		System.out.println("Total Perimeter: " + ShapeUtilites.sumPerimeter(shapeArr));
 
 	}
 

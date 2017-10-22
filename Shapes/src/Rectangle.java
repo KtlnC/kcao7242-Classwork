@@ -1,3 +1,4 @@
+
 /**
  * @author Kaitlyn Cao 
  * Created 10/16/2017 
@@ -14,18 +15,18 @@ public class Rectangle implements Shape {
 		this.width = width;
 	}
 	
-	public double perimeter()
+	public double calculatePerimeter()
 	{
 		return (length*2 + width*2);
 	}
 	
-	public double area()
+	public double calculateArea()
 	{
 		return length*width;
 	}
 	
-	public String toString()
-	{
-		return "Rectangle Width: " + width + "Length: " + length + "Area: " = this.area() + "Perimeter: " + this.calculatePerimeter();
+	public String toString() {
+		return "Rectangle Width: " + width + " Length: " + length + " Area: " + this.calculateArea() + " Perimeter: "
+				+ this.calculatePerimeter();
 	}
 }

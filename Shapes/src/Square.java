@@ -1,3 +1,4 @@
+
 /**
  * @author Kaitlyn Cao 
  * Created 10/16/2017 
@@ -16,24 +17,6 @@ public class Square extends Rectangle {
 	
 	public String toString()
 	{
-		return "";
+		return "Square Width: " + side + " Length: " + side + " Area: " + this.calculateArea() + " Perimeter: " + this.calculatePerimeter();
 	}
 }
-
-/*	private double side; 
-
-public Square(double side)
-{
-	this.side = side;
-}
-
-public double perimeter()
-{
-	return side+side+side+side;
-}
-
-public double area()
-{
-	return side*4;
-}
-*/

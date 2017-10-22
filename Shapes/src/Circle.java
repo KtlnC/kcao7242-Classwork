@@ -1,3 +1,4 @@
+
 /**
  * @author Kaitlyn Cao 
  * Created 10/16/2017 
@@ -6,26 +7,32 @@
  */
 public class Circle implements Shape {
 	
+	//fields
 	private double radius;
 	private static double pi = 3.14;
-	
-	public Circle(double rad)
+
+	/**
+	 * Constructor method
+	 * 
+	 * @param radius
+	 */
+	public Circle(double radius)
 	{
-		this.radius = rad;
+		this.radius = radius;
 	}
 	
-	public double perimeter()
+	public double calculatePerimeter()
 	{
 		return 2*(pi*radius);
 	}
 	
-	public double area()
+	public double calculateArea()
 	{
-		return pi*(radius*2);
+		return pi*(radius* radius);
 	}
 	
 	public String toString()
 	{
-		return "";
+		return "Circle Radius: " + radius + " Area: " + this.calculateArea() + " Perimeter: " + this.calculatePerimeter();
 	}
 }
